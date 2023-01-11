@@ -1,0 +1,10 @@
+# get base from https://hub.docker.com/_/python
+FROM python:3.9-slim-buster
+
+WORKDIR /my_app
+
+# Copy any application code that you want to install/run and bake it into the image
+COPY main.py .
+
+# This is a default instruction that will be called during 'docker run'
+CMD ["python", "./main.py"]

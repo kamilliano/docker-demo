@@ -1,0 +1,4 @@
+# get base from https://hub.docker.com/_/python
+FROM python:3.9-slim-buster
+
+CMD ["python", "main.py"]
