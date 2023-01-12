@@ -19,6 +19,14 @@ list-images:
 	# Get images that were build on our stystem
 	docker images
 
+list-containers-running:
+
+	docker ps
+
+list-conainters-stopped:
+
+	docker ps -a
+
 inspect-image:
 
 	docker image inspect $(IMAGE)
